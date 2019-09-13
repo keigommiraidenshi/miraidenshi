@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>       
+  <head>
+    <meta charset="utf-8">
+    <title>逆求人サイト</title>
+    <link rel="stylesheet" type="text/css" href="h.css">
+    <script src="https://kit.fontawesome.com/3394c68f9d.js"></script>
+  </head>
+
+  <body>
+    <header>  
+        <div class="container">
+            <div class="header-left">
+                <div class="header-logo">KEIGO MATSUMOTO</div>
+
+            </div>  
+          </div>  
+    </header>
+  
+  <div class="top-wrapper">
+    <h1>profile</h1>
+  </div>
+
+<div class="lesson-wrapper">
+
+        <div class="heading">
+      <h2>自己紹介</h2>
+      </div>
+      <img id="mypic" src="IMG1.jpg" width="400" height="300">
+      <script>
+      var pics_src = new Array("IMG1.jpg","IMG2.jpg","IMG3.jpg");
+      var num = -1;
+
+      slideshow_timer();
+
+      function slideshow_timer(){
+          if (num == 2){
+              num = 0;
+          } 
+          else {
+              num ++;
+          }
+          document.getElementById("mypic").src=pics_src[num];
+          setTimeout("slideshow_timer()",3000); 
+      }
+      </script>
+
+    <p>2015年8月　カナダ留学</p>
+    <p>2017年4月　立命館大学国際関係学部入学</p>
+    <p>2018年9月　イギリス留学</p>
+    <p>2019年8月　未来電子インターン開始</p>
+    <p></p>
+    <p></p>
+    <div class="sns">
+        <a href="https://www.facebook.com/keigo.matsumoto.359" class="btn facebook"><i class="fab fa-facebook"></i>Facebook</a>
+        <a href="https://www.instagram.com/mkeigo/?hl=ja" class="btn instagram"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://twitter.com/mkaygo27" class="btn twitter"><i class="fab fa-twitter-square"></i>Twitter</a>
+      </div>
+  </div>
+</div>  
+<div class="message-wrapper"> 
+    <div class="contact-form">
+            <h3 class="section-title">お問い合わせ</h3>
+            <p>メールアドレス（必須）</p>
+
+            <input>
+            
+            <p>お問い合わせ内容（必須）</p>
+
+            <textarea></textarea>
+            
+            <p>※必須項目は必ずご入力ください</p>
+
+           <input class="contact-submit" type="submit" value="送信"> 
+            
+          </div>
+        </div>
+      </div>
+    <footer>
+        <div class="container">
+          </div>
+    </footer>
+  </body>
+</html>
